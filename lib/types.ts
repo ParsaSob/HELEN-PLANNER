@@ -16,3 +16,19 @@ export interface DayEntry {
 export interface PlannerState {
   days: DayEntry[];
 }
+
+export interface FocusSession {
+  id: string;
+  subjectIdx: number;
+  durationMinutes: number;
+  goal: string;
+  testsCompleted: number;
+  completed: boolean;
+  startedAt: number;
+}
+
+export type FocusStatus = "idle" | "running" | "paused" | "completed";
+
+export type ViewKey = "dashboard" | "day" | "week" | "progress" | "focus";
+
+export type GrowthStage = "seed" | "sprout" | "sapling" | "tree" | "oak";

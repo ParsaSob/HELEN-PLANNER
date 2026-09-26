@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "پلنر هلن — کنکور تجربی",
-  description: "پلنر روزانه و هفتگی مطالعه کنکور تجربی، با اُرب پیشرفت سه‌بعدی",
+  description: "پلنر روزانه و هفتگی مطالعه کنکور تجربی، با محیط سه‌بعدی و درخت پیشرفت",
 };
 
-export const viewport = {
+export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
